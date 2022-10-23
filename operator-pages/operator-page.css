@@ -1,0 +1,375 @@
+/* ! -------------- HEADER -------------- ! */
+
+
+/** OPERATOR HEADER **/
+header{
+    width: 100%;
+    height: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-image: url(../img/banner/7907369fa863844fc1ae432a9ca0e610.jpg);
+}
+
+    /** SIDE ICON **/
+    .operator-header-icon{
+        width: auto;
+        height: 95%;
+
+        position: absolute;
+
+        opacity: .1;
+
+        bottom: -5%;
+
+        animation: side-icon-animate 1s 1;
+    }
+
+    @keyframes side-icon-animate {
+        from{
+            transform: translateY(200px);
+        }
+        to{
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes side-icon-light-animate {
+        from{
+            opacity: .8;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+        }
+        to{
+            opacity: .1;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0));
+        }
+    }
+
+
+    /** OPERATOR IMG **/
+    .operator-img-header{
+        width: auto;
+        height: 65%;
+
+        position: absolute;
+
+        animation-name: operator-img-animate;
+        animation-duration: 1s;
+
+
+        bottom: 32%;
+    }
+
+    @keyframes operator-img-animate {
+        from{   
+            transform: translateX(840px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+
+
+    /** OPERATOR INFO **/
+    .operator-info{
+        width: 100%;
+        height: 32%;
+
+        background-color: rgb(24, 24, 24);
+
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+        /** OPERATOR SIDE TITLE **/
+        .operator-side-title{
+            width: 100%;
+            height: auto;
+
+            padding: .4rem;
+
+            position: absolute;
+            top: 0;
+            
+            font-size: 30px;
+            text-align: center;
+
+            color: #fff;
+
+            backdrop-filter: blur(5px);
+        }
+
+        .defender-side-title{
+            background-color: rgba(219, 97, 9, .5);
+        }
+
+        .attacker-side-title{
+            background-color: rgba(23, 124, 200, .5);
+        }
+
+        /** OPERATOR NAME **/
+        .operator-name-header{
+            font-size: 75px;
+
+            color: #fff;
+        }
+
+        /** SORTER **/
+        .sorter-header-info{
+            width: 50%;
+            height: 1px;
+
+            background-color: #fff;
+        }
+
+        /** OPERATOR SKILL AREA**/
+        .operator-skill-area{
+            width: 100%;
+            height: auto;
+
+            margin-top: 2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.8rem;
+        }
+
+            /** OPERATOR SKILL SLOT**/
+            .operator-skill{
+                color: #fff;
+                font-size: 18px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .7rem;
+            }
+
+                .skills{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .5rem;
+                }
+
+                    /** SKILL ELIPS**/
+                    .skill-bar{
+                        width: 15px;
+                        height: 15px;
+
+                        background-color: #fff;
+
+                        border-radius: 50%;
+                    }
+
+                    .is-active{
+                        opacity: 1;
+                    }
+
+                    .is-disabled{
+                        opacity: .5;
+                    }
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- BIOGRAPHY -------------- ! */
+
+/** BIOGRAPHY TEXT **/
+.biography-text{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+
+/* ! -------------- TRAILER -------------- ! */
+
+.operator-trailer{
+    width: 100%;
+    height: auto;
+    
+    position: relative;
+}
+
+    .operator-trailer iframe{
+        width: 420px;
+    }
+
+    .iframe-video{
+        width: 560px;
+        height: 315px;
+    }
+
+    
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- RESPONSIVE - HEADER -------------- ! */
+
+
+@media screen and (min-width:1080px){
+    header{
+    height: 700px;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+    /** SIDE ICON **/
+    .operator-header-icon{
+        width: auto;
+        height: 95%;
+
+        bottom: -5%;
+        right: 100px;
+    }
+
+
+    /** OPERATOR IMG **/
+    .operator-img-header{
+        width: auto;
+        height: 93%;
+
+        position: absolute;
+
+        bottom: 0;
+        right: 10%;
+
+        z-index: 8;
+    }
+
+
+
+    /** OPERATOR INFO **/
+    .operator-info{
+        width: 100%;
+        height: 100%;
+
+        background: none;
+
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
+    }
+
+        /** OPERATOR SIDE TITLE **/
+        .operator-side-title{
+            width: 100%;
+            height: auto;
+
+            padding: .4rem .4rem .4rem 12.5rem;
+
+            position: relative;
+            
+            font-size: 35px;
+            text-align: left;
+
+            color: #fff;
+
+            backdrop-filter: blur(5px);
+        }
+
+        .defender-side-title{
+            background-color: rgba(219, 97, 9, .5);
+        }
+
+        .attacker-side-title{
+            background-color: rgba(23, 124, 200, .5);
+        }
+
+        /** OPERATOR NAME **/
+        .operator-name-header{
+            font-size: 85px;
+
+            color: #fff;
+
+            padding-left: 12rem;
+        }
+
+        /** SORTER **/
+        .sorter-header-info{
+            width: 27%;
+            height: .5px;
+
+            background-color: #fff;
+        }
+
+        /** OPERATOR SKILL AREA**/
+        .operator-skill-area{
+            width: 100%;
+            height: auto;
+
+            margin-top: 2rem;
+            padding-left: 12rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+            /** OPERATOR SKILL SLOT**/
+            .operator-skill{
+                color: #fff;
+                font-size: 25px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .7rem;
+            }
+}
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- BIOGRAPHY - HEADER -------------- ! */
+
+@media screen and (min-width:900px){
+    /** BIOGRAPHY TEXT **/
+    .biography-text{
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+/* ! -------------- ********** -------------- ! */

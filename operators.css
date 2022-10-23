@@ -1,0 +1,256 @@
+
+/* ! -------------- OPERATORS -------------- ! */
+
+/** OPLIST SECTION **/
+.oplist-section{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+    /** OPLIST TITLE **/
+    .oplist-title{
+        color: #fff;
+        font-weight: medium;
+    }
+
+    .oplist-card-list-title{
+        display: inline-block;
+
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+
+        padding: .5rem;
+
+        color: #fff;
+        
+        font-size: 25px;
+    }
+
+    .title-defender{
+        position: relative;
+        
+        background-color: #db6109;
+    }
+
+    .title-attacker{
+        background-color: #177cc8;
+    }
+
+    .oplist-section-title{
+        font-size: 45px;
+    }
+
+
+
+    /** OPLIST CARD LIST **/
+    .oplist-card-list{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+
+        /** OPLIST CARD WRAPPER **/
+        .oplist-card-wrapper{
+            width: 95%;
+            height: auto;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: .5rem;
+        }
+
+
+
+            /** OPLIST CARD **/
+            .oplist-card{
+                width: 18%;
+                height: 360px;
+
+                margin-bottom: 2rem;
+
+                position: relative;
+
+                overflow: hidden;
+
+                display: flex;
+                justify-content: center;
+
+                transition: transform 0.2s;
+            }
+
+            .oplist-card:hover{
+                transform: scale(1.1);
+
+                z-index: 8;
+            }
+
+
+
+                /** OPLIST CARD BACKGROUND **/
+                .oplist-card-background{
+                    width: 100%;
+                    height: 94%;
+
+                    backdrop-filter: blur(10px);
+
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                .defender-side-background{
+                    background-image: linear-gradient(to bottom, rgba(219, 96, 9, .4), rgba(110, 48, 5, .4));
+
+                    transition: background-color 0.2s;
+                }
+
+                .oplist-card:hover .defender-side-background{
+                    background-color: rgba(219, 96, 9, .8);
+                }
+
+                .attacker-side-background{
+                    background-image: linear-gradient(to bottom, rgba(23, 124, 200, 0.4), rgb(6, 70, 118, 0.4));
+                }
+
+                .oplist-card:hover .attacker-side-background{
+                    background-color: #177cc8;
+                }
+
+
+
+                /** OPLIST CARD IMG **/
+                .oplist-card-img{
+                    width: auto;
+                    height: 100%;
+                    
+                    position: absolute;
+
+                    z-index: 4;
+                }
+
+
+
+                /** OPLIST CARD BG ICON **/
+                .oplist-card-bg-icon{
+                    width: auto;
+                    height: 90%;
+                    
+                    position: absolute;
+                    bottom: 0;
+
+                    filter: drop-shadow(0 0 20px #fff);
+
+                    opacity: .1;
+
+                    z-index: 4;
+                }
+
+                .oplist-card-bg-icon-defender{
+                    left: 55%;
+                }
+
+                .oplist-card-bg-icon-attacker{
+                    left: 20%;
+                }
+
+
+
+                /** OPERATOR CARD NAME **/
+                .operator-name{
+                    width: 100%;
+                    height: auto;
+
+                    padding: .5rem;
+                    
+                    display: inline-block;
+
+                    position: absolute;
+                    bottom: 0;
+
+                    background-color: rgba(192, 192, 192, .2);
+
+                    text-align: center;
+                    color: #fff;
+                    font-size: 30px;
+
+                    backdrop-filter: blur(10px);
+
+                    transition: all 0.2s;
+
+                    z-index: 6;
+                }
+
+                .oplist-card:hover .operator-name{
+                    font-size: 25px;
+
+                    padding: .1rem;
+                }
+
+                .oplist-card:hover .operator-name-defender{
+                    background-color: #db6109;
+                    
+                    box-shadow: 0 -20px 30px #db6109;
+                }
+
+                .oplist-card:hover .operator-name-attacker{
+                    background-color: #177cc8;
+                    
+                    box-shadow: 0 -20px 30px #177cc8;
+                }
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- OPERATORS - RESPONSIVE -------------- ! */
+
+@media screen and (max-width:1100px){
+    /** OPLIST CARD **/
+    .oplist-card{
+        width: 22%;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width:850px){
+    /** OPLIST CARD **/
+    .oplist-card{
+        width: 31%;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width:700px){
+    /** OPLIST CARD **/
+    .oplist-card{
+        width: 45%;
+        height: 360px;
+    }
+
+}
+
+@media screen and (max-width:530px){
+    /** OPLIST CARD **/
+    .oplist-card{
+        width: 45%;
+        height: 260px;
+    }
+}

@@ -1,0 +1,248 @@
+/* ! -------------- GLOBAL TAGS -------------- ! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: medium;
+}
+
+body{
+    background-color: #011715;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- GLOBAL CLASS -------------- ! */
+
+    /** MAIN BUTTON **/
+    .btn{
+        padding: 1rem 1.5rem;
+
+        border-style: none;
+
+        font-size: 18px;
+
+        cursor: pointer;
+        
+        background-color: #2499FF;
+
+        transition: box-shadow 0.3s;
+    }
+
+    .btn:hover{
+        box-shadow: 0 0 15px #2499FF;
+    }
+
+
+
+    /** SECTION **/
+    .operator-page-section{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 3rem 12rem;
+    }
+
+        /** SECTION TITLE **/
+        .section-title{
+            color: #fff;
+            font-size: 55px;
+        }
+
+        /** SECTION CONTENT **/
+        .secion-content{
+            width: 100%;
+            height: auto;
+        }
+
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- NAV BAR -------------- ! */
+
+    /** NAV WRAPPER **/
+    nav{
+        width: 100%;
+        height: auto;
+
+        background-image: linear-gradient(to bottom, rgba(12, 19, 37, 1), rgb(12, 19, 37, 0));
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        position: fixed;
+        top: 0;
+
+        padding: 1rem 1.5rem;
+
+        z-index: 100;
+    }
+
+        /** NAV LOGO **/
+        .nav-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .nav-logo-item{
+                width: 184px;
+                height: auto;
+            }
+
+        
+        
+        /** NAV LINK LIST **/
+        .nav-links-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /** NAV ITEM **/
+            .nav-item{
+                margin: 0 1rem;
+            }
+
+            /** NAV LINK **/
+            .nav-link{
+                color: #fff;
+
+                font-size: 18px;
+
+                transition: color 0.3s;
+            }
+
+            .nav-link:hover{
+                color: #2499FF;
+            }
+
+/* ! -------------- ********** -------------- ! */
+
+
+
+
+
+
+/* ! -------------- NAV BAR - RESPONSIVE -------------- ! */
+
+@media screen and (max-width:850px){
+    
+    /** NAV LOGO **/
+    .nav-logo-item{
+        width: 134px;
+    }
+
+
+
+    /** NAV LINK **/
+    .nav-link{
+        font-size: 15px;
+    }
+
+
+
+    /** MAIN BUTTON **/
+    .btn{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+        /** NAV LOGO **/
+        .nav-logo-item{
+            width: 114px;
+        }
+    
+        /** NAV LINK **/
+        .nav-link{
+            font-size: 12px;
+        }
+    
+    
+    
+        /** MAIN BUTTON **/
+        .btn{
+            font-size: 12px;
+        }
+}
+
+@media screen and (max-width:700px){
+        /** NAV LOGO **/
+        .nav-logo-item{
+            width: 114px;
+        }
+    
+        /** NAV LINK **/
+        .nav-link{
+            display: none;
+        }
+    
+    
+    
+        /** MAIN BUTTON **/
+        .btn{
+            font-size: 12px;
+        }
+
+@media screen and (max-width:400px){
+/** MAIN BUTTON **/
+        .btn{
+            font-size: 10px;
+
+            padding: .3rem;
+        }
+}
+}
+
+
+
+
+
+
+/* ! -------------- RESPONSİVE - GLOBAL CLASS -------------- ! */
+
+@media screen and (max-width:1050px){
+    /** SECTION **/
+    .operator-page-section{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 3rem 3rem;
+    }
+}

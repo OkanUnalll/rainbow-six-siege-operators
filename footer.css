@@ -1,0 +1,392 @@
+/* ! -------------- FOOTER -------------- ! */
+
+footer{
+    width: 100%;
+    height: auto;
+
+    margin-top: 1.5rem;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+
+    padding: 3rem;
+
+    background-color: #242424;
+    background-image: linear-gradient(to right, #5c2d0b, #5c130f);
+
+    color: #fff;
+}
+
+    /** FOOTER LOGO AREA **/
+    .footer-logo-area{
+        width: 32%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        /** LOGO IMG **/
+        .official-logo{
+            width: 130px;
+            height: auto;
+        }
+
+        .official-logo:hover{
+            opacity: 0.8;
+        }
+
+    /** ARTIST TEXT AREA **/
+    .artist-text-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+        .artist-name-title{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: medium;
+            font-size: 28px;
+        }
+
+        .artist-skills{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 12px;
+
+            margin-top: -2px;
+        }
+
+
+
+    /** TEXT AREA **/
+    .footer-text-area{
+        width: 32%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+
+        text-align: left;
+    }
+
+        /** HEADER - TEXT AREA **/
+        .footer-header{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: medium;            
+            font-size: 28px;
+        }
+
+        /** DESCIPTION - TEXT AREA **/
+        .footer-description{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 300;            
+            font-size: 13px;
+        }
+
+
+
+        /** SOCIAL MEDIA AREA **/
+        .footer-social-media{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: .7rem;
+        }
+
+            /** BUTTON - SOCIAL MEDIA **/
+            .social-media-icon{
+                width: 35px;
+                height: 35px;
+
+                background-color: #794D96;
+
+                color: rgb(216, 216, 216);
+                
+                padding: .3rem;
+
+                border-radius: 50px;
+                border-style: none;
+
+                font-size: 16px;
+
+                transition: filter 0.2s, color 0.2s;
+            }
+
+            .social-media-icon:hover{
+                animation-name: social-media-icon-animate;
+                animation-duration: .2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: 1;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
+                animation-play-state: running;
+
+                filter: drop-shadow(0 0 6px #9E519A);
+
+                cursor: pointer;
+            }
+
+            @keyframes social-media-icon-animate{
+                50%{
+                    transform: scale(1.8);
+                }
+                100%{
+                    transform: scale(1.4);
+
+                    background-color: #9F529A;
+
+                    color: #fff;
+
+                    border-color: #EFA875;
+                    border-style: solid;
+                    border-width: 1px;
+                }
+            }
+
+
+
+
+
+
+/** FOOTER - BOTTOM **/
+.footer-bottom{
+    width: 100%;
+    height: auto;
+
+    background-color: #131313;
+
+    padding: .7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    font-size: 13px;
+}
+
+    .footer-bottom span{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: medium; 
+    }
+
+    .footer-bottom a{
+        color: #9E519A;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: medium; 
+    }
+
+
+
+
+
+
+/* ! -------------- RESPONSİVE - FOOTER -------------- ! */
+
+@media screen and (max-width:1032px){
+    footer{
+        width: 100%;
+        height: auto;
+    
+        margin-top: 1.5rem;
+    
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    
+        padding: 3rem;
+    
+        background-color: #242424;
+        background-image: linear-gradient(to right, #5c2d0b, #5c130f);
+    
+        color: #fff;
+    }
+    
+        /** FOOTER LOGO AREA **/
+        .footer-logo-area{
+            width: 100%;
+            height: auto;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+            /** LOGO IMG **/
+            .official-logo{
+                width: 130px;
+                height: auto;
+            }
+    
+            .official-logo:hover{
+                opacity: 0.8;
+            }
+    
+        /** ARTIST TEXT AREA **/
+        .artist-text-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            text-align: center;
+        }
+    
+            .artist-name-title{
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: medium;
+                font-size: 37px;
+            }
+    
+            .artist-skills{
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 15px;
+    
+                margin-top: -2px;
+            }
+    
+    
+    
+        /** TEXT AREA **/
+        .footer-text-area{
+            width: 100%;
+            height: auto;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+    
+            text-align: center;
+        }
+    
+            /** HEADER - TEXT AREA **/
+            .footer-header{
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: medium;            
+                font-size: 35px;
+            }
+    
+            /** DESCIPTION - TEXT AREA **/
+            .footer-description{
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 300;            
+                font-size: 16px;
+            }
+    
+    
+    
+            /** SOCIAL MEDIA AREA **/
+            .footer-social-media{
+                width: 100%;
+                height: auto;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+    
+                /** BUTTON - SOCIAL MEDIA **/
+                .social-media-icon{
+                    width: 52px;
+                    height: 52px;
+    
+                    background-color: #794D96;
+    
+                    color: rgb(216, 216, 216);
+    
+                    border-radius: 50px;
+                    border-style: none;
+    
+                    font-size: 22px;
+
+                    text-align: center;
+    
+                    transition: filter 0.2s, color 0.2s;
+                }
+    
+                .social-media-icon:hover{
+                    animation-name: social-media-icon-animate;
+                    animation-duration: .2s;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: forwards;
+                    animation-play-state: running;
+    
+                    filter: drop-shadow(0 0 6px #9E519A);
+    
+                    cursor: pointer;
+                }
+    
+                @keyframes social-media-icon-animate{
+                    50%{
+                        transform: scale(1.8);
+                    }
+                    100%{
+                        transform: scale(1.4);
+    
+                        background-color: #9F529A;
+    
+                        color: #fff;
+    
+                        border-color: #EFA875;
+                        border-style: solid;
+                        border-width: 1px;
+                    }
+                }
+}
+
+@media screen and (max-width:580px){
+
+        /** BUTTON - SOCIAL MEDIA **/
+        .social-media-icon{
+            width: 42px;
+            height: 42px;
+
+            background-color: #794D96;
+
+            color: rgb(216, 216, 216);
+
+            border-radius: 50px;
+            border-style: none;
+
+            font-size: 16px;
+
+            transition: filter 0.2s, color 0.2s;
+        }
+}
